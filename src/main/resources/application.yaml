@@ -1,0 +1,28 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:bankxdb
+    username: sa
+    password:
+  h2:
+    console:
+      path: /h2
+      enabled: true
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: lilwaltmus@gmail.com
+    password: zuox arej gcja cbih
+    properties:
+      mail:
+        transport:
+          protocol: smtp
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+  jpa:
+    defer-datasource-initialization: true
+  sql:
+    init:
+      mode: always
